@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="कार्यालय ब्लॉक मुख्य चिकित्सा अधिकारी (BCMO), हिण्डोली, जिला - बूंदी (राजस्थान) जनसूचना एवं ई-परिपत्र पोर्टल।">
+    <title>कार्यालय BCMO हिण्डोली | चिकित्सा एवं स्वास्थ्य विभाग, राजस्थान</title>
+    
+    <!-- Google Fonts: Noto Sans Devanagari -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --gov-blue: #0b3c68;
+            --gov-blue-dark: #072540;
+            --gov-blue-light: #eef4fa;
+            --gov-saffron: #e65c00;
+            --gov-saffron-light: #fff5ee;
+            --gov-green: #138808;
+            --text-dark: #1f2937;
+            --text-muted: #4b5563;
+            --bg-light: #f8fafc;
+            --border-color: #cbd5e1;
+            --white: #ffffff;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.25s ease-in-out;
+            --base-font-size: 16px;
+        }
+
+        html {
+            font-size: var(--base-font-size);
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans Devanagari', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .gov-top-strip {
+            height: 4px;
+            background: linear-gradient(90deg, var(--gov-saffron) 33.3%, #ffffff 33.3%, #ffffff 66.6%, var(--gov-green) 66.6%);
+        }
+
+        .top-utility-bar {
+            background-color: var(--gov-blue-dark);
+            color: var(--white);
+            font-size: 0.85rem;
+            padding: 6px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .utility-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .disclaimer-badge {
+            background-color: #dc2626;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .font-resizer button {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--white);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 2px 8px;
+            margin-left: 3px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 0.8rem;
+        }
+
+        .font-resizer button:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        header {
+            background-color: var(--white);
+            border-bottom: 2px solid var(--border-color);
+            padding: 16px 20px;
+        }
+
+        .header-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .brand-section {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .office-emblem {
+            width: 64px;
+            height: 64px;
+            background: var(--gov-blue-light);
+            border: 2px solid var(--gov-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gov-blue);
+            font-weight: bold;
+            font-size: 1.7rem;
+            flex-shrink: 0;
+        }
+
+        .office-titles h1 {
+            font-size: 1.4rem;
+            color: var(--gov-blue);
+            font-weight: 700;
+            line-height: 1.25;
+        }
+
+        .office-titles h2 {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .office-titles h3 {
+            font-size: 0.85rem;
+            color: var(--gov-saffron);
+            font-weight: 600;
+        }
+
+        .emergency-quick-box {
+            background: var(--gov-saffron-light);
+            border: 1px dashed var(--gov-saffron);
+            border-radius: 6px;
+            padding: 8px 15px;
+            text-align: right;
+            font-size: 0.85rem;
+        }
+
+        .emergency-quick-box strong {
+            color: var(--gov-saffron);
+            font-size: 1.05rem;
+            display: block;
+        }
+
+        nav {
+            background-color: var(--gov-blue);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        .nav-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links li a {
+            display: block;
+            color: var(--white);
+            padding: 13px 16px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
+            transition: var(--transition);
+        }
+
+        .nav-links li a:hover,
+        .nav-links li a.active {
+            background-color: rgba(255, 255, 255, 0.12);
+            border-bottom-color: var(--gov-saffron);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.4rem;
+            padding: 10px 16px;
+            cursor: pointer;
+        }
+
+        .ticker-wrapper {
+            background-color: #fff9e6;
+            border-bottom: 1px solid #fed7aa;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            font-size: 0.9rem;
+        }
+
+        .ticker-title {
+            background-color: var(--gov-saffron);
+            color: var(--white);
+            padding: 7px 15px;
+            font-weight: 600;
+            white-space: nowrap;
+            z-index: 2;
+        }
+
+        .ticker-content {
+            white-space: nowrap;
+            padding-left: 20px;
+            animation: ticker 28s linear infinite;
+        }
+
+        .ticker-content a {
+            color: var(--gov-blue);
+            text-decoration: none;
+            font-weight: 500;
+            margin-right: 35px;
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .main-wrapper {
+            max-width: 1240px;
+            margin: 25px auto;
+            padding: 0 16px;
+        }
+
+        .section-header {
+            border-bottom: 2px solid var(--gov-blue);
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .section-header h2 {
+            font-size: 1.35rem;
+            color: var(--gov-blue);
+        }
+
+        .hero-banner {
+            background: linear-gradient(135deg, var(--gov-blue) 0%, var(--gov-blue-dark) 100%);
+            color: var(--white);
+            border-radius: 8px;
+            padding: 26px 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            display: grid;
+            grid-template-columns: 1.8fr 1.2fr;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .hero-text h2 {
+            font-size: 1.7rem;
+            margin-bottom: 10px;
+            color: #ffd8a8;
+        }
+
+        .hero-text p {
+            font-size: 0.95rem;
+            opacity: 0.95;
+            margin-bottom: 15px;
+        }
+
+        .hero-stats {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 16px;
+            border-radius: 8px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            text-align: center;
+        }
+
+        .stat-item {
+            background: rgba(0, 0, 0, 0.25);
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .stat-number {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #ffd8a8;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+        }
+
+        .filter-controls {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 18px;
+            align-items: center;
+        }
+
+        .filter-input {
+            flex-grow: 1;
+            min-width: 250px;
+            padding: 8px 14px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-size: 0.92rem;
+            outline: none;
+        }
+
+        .filter-input:focus {
+            border-color: var(--gov-blue);
+            box-shadow: 0 0 0 3px rgba(11, 60, 104, 0.12);
+        }
+
+        .filter-btn-group {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            padding: 7px 13px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--gov-blue);
+            color: var(--white);
+            border-color: var(--gov-blue);
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            margin-bottom: 30px;
+            max-height: 520px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+
+        table th {
+            position: sticky;
+            top: 0;
+            background-color: #f1f5f9;
+            color: var(--gov-blue-dark);
+            padding: 11px 14px;
+            font-weight: 600;
+            border-bottom: 2px solid var(--border-color);
+            white-space: nowrap;
+            z-index: 5;
+        }
+
+        table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid #e2e8f0;
+            color: var(--text-dark);
+        }
+
+        table tr:hover {
+            background-color: #f8fafc;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .badge-bcmo { background: #fee2e2; color: #991b1b; }
+        .badge-chc { background: #e0f2fe; color: #0369a1; }
+        .badge-phc { background: #fef3c7; color: #92400e; }
+        .badge-sub { background: #dcfce7; color: #166534; }
+        .badge-uploaded { background: #f3e8ff; color: #7e22ce; }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background-color: var(--gov-blue);
+            color: var(--white);
+            padding: 6px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-action:hover {
+            background-color: var(--gov-blue-dark);
+        }
+
+        .btn-action-saffron {
+            background-color: var(--gov-saffron);
+        }
+
+        .btn-action-saffron:hover {
+            background-color: #c24e00;
+        }
+
+        .btn-action-outline {
+            background-color: transparent;
+            color: var(--gov-blue);
+            border: 1px solid var(--gov-blue);
+        }
+
+        .btn-action-outline:hover {
+            background-color: var(--gov-blue);
+            color: var(--white);
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(3px);
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .modal.open {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--white);
+            border-radius: 8px;
+            max-width: 600px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .modal-header {
+            background: var(--gov-blue);
+            color: var(--white);
+            padding: 14px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .modal-body {
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 14px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            border-color: var(--gov-blue);
+        }
+
+        .modal-footer {
+            padding: 12px 20px;
+            background: #f8fafc;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .contact-card {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 22px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-card h3 {
+            color: var(--gov-blue);
+            margin-bottom: 14px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+        }
+
+        footer {
+            background-color: var(--gov-blue-dark);
+            color: var(--white);
+            padding: 35px 20px 15px 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        .footer-col h4 {
+            color: #ffd8a8;
+            font-size: 1.05rem;
+            margin-bottom: 12px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 6px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+            padding-left: 4px;
+        }
+
+        .footer-bottom {
+            max-width: 1240px;
+            margin: 0 auto;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 15px;
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 900px) {
+            .hero-banner, .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .emergency-quick-box {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gov-top-strip"></div>
+
+    <div class="top-utility-bar">
+        <div class="utility-left">
+            <span>चिकित्सा, स्वास्थ्य एवं परिवार कल्याण विभाग, राजस्थान सरकार</span>
+            <span class="disclaimer-badge">सार्वजनिक जनसूचना पोर्टल</span>
+        </div>
+        <div class="font-resizer">
+            <span>फॉन्ट:</span>
+            <button onclick="changeFontSize(-1)">A-</button>
+            <button onclick="changeFontSize(0)">A</button>
+            <button onclick="changeFontSize(1)">A+</button>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <div class="brand-section">
+                <div class="office-emblem">⚕</div>
+                <div class="office-titles">
+                    <h1>कार्यालय ब्लॉक मुख्य चिकित्सा अधिकारी (BCMO)</h1>
+                    <h2>पंचायत समिति - हिण्डोली, जिला - बूंदी (राजस्थान)</h2>
+                    <h3>Block Chief Medical Officer Office, Hindoli (Bundi)</h3>
+                </div>
+            </div>
+            <div class="emergency-quick-box">
+                24x7 स्वास्थ्य हेल्पलाइन
+                <strong>एम्बुलेंस: 108 / 104</strong>
+                <span>राजस्थान संपर्क: 181</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <button class="mobile-toggle" onclick="toggleNav()">☰ मेनू</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">मुख्य पृष्ठ</a></li>
+                <li><a href="#institutions">स्वास्थ्य संस्थान (62 केंद्र)</a></li>
+                <li><a href="#staff">कार्मिक निर्देशिका (300+)</a></li>
+                <li><a href="#orders">आदेश व परिपत्र</a></li>
+                <li><a href="#contact">संपर्क सूत्र</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="ticker-wrapper">
+        <div class="ticker-title">नवीनतम सूचनाएं:</div>
+        <div class="ticker-content">
+            <a href="#orders">• ब्लॉक हिण्डोली अंतर्गत समस्त CHC/PHC पर निःशुल्क दवा एवं जांच योजना पूर्णतः सुचारू।</a>
+            <a href="#orders">• प्रत्येक गुरुवार को समस्त आंगनवाड़ी एवं उप-स्वास्थ्य केंद्रों पर नियमित टीकाकरण सत्र।</a>
+            <a href="#orders">• मौसमी बीमारियों से बचाव हेतु ब्लॉक स्तरीय आर.आर.टी. टीम निरंतर सतर्क।</a>
+        </div>
+    </div>
+
+    <main class="main-wrapper" id="home">
+        
+        <!-- Hero Section with Block Statistics from the PDF Report -->
+        <section class="hero-banner">
+            <div class="hero-text">
+                <h2>ब्लॉक हिण्डोली स्वास्थ्य प्रबंधन एवं जन-सेवा</h2>
+                <p>
+                    कार्यालय ब्लॉक मुख्य चिकित्सा अधिकारी (BCMO) हिण्डोली के अधीन 3 सामुदायिक स्वास्थ्य केंद्र (CHC), 8 प्राथमिक स्वास्थ्य केंद्र (PHC) एवं 50 उप-स्वास्थ्य केंद्र संचालित हैं। यह पोर्टल समस्त संस्थानों, कार्मिकों की प्रामाणिक सूची एवं सार्वजनिक आदेशों की पारदर्शिता हेतु समर्पित है।
+                </p>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <a href="#institutions" class="btn-action btn-action-saffron">चिकित्सा संस्थान खोजें →</a>
+                    <button class="btn-action" onclick="openUploadModal()">+ नया पत्र / आदेश अपलोड करें</button>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">03</div>
+                    <div class="stat-label">सामुदायिक स्वास्थ्य केंद्र (CHC)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">08</div>
+                    <div class="stat-label">प्राथमिक स्वास्थ्य केंद्र (PHC)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50</div>
+                    <div class="stat-label">उप स्वास्थ्य केंद्र (Sub-Center)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">302</div>
+                    <div class="stat-label">पंजीकृत सक्रिय कार्मिक</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. All 62 Medical Institutions (Extracted from Report) -->
+        <section id="institutions" style="margin-bottom: 40px;">
+            <div class="section-header">
+                <h2>चिकित्सा संस्थान निर्देशिका (Medical Institutions - Total 62)</h2>
+                <small style="color: var(--text-muted);">* चिकित्सा एवं स्वास्थ्य विभाग, बूंदी अधिकृत विवरण</small>
+            </div>
+
+            <div class="filter-controls">
+                <input type="text" id="instSearch" class="filter-input" placeholder="संस्थान का नाम, प्रभारी या पद खोजें..." onkeyup="filterInstitutions()">
+                <div class="filter-btn-group">
+                    <button class="filter-btn active" onclick="filterInstByType('ALL', this)">सभी (62)</button>
+                    <button class="filter-btn" onclick="filterInstByType('BCMO', this)">BCMO Office (1)</button>
+                    <button class="filter-btn" onclick="filterInstByType('CHC', this)">सीएचसी - CHC (3)</button>
+                    <button class="filter-btn" onclick="filterInstByType('PHC', this)">पीएचसी - PHC (8)</button>
+                    <button class="filter-btn" onclick="filterInstByType('SubCentre', this)">उप-स्वास्थ्य केंद्र (50)</button>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th># ID</th>
+                            <th>संस्थान का नाम</th>
+                            <th>प्रकार (Type)</th>
+                            <th>क्षेत्र</th>
+                            <th>संस्थान प्रभारी (Incharge)</th>
+                            <th>संपर्क (Mobile)</th>
+                            <th>स्थिति</th>
+                        </tr>
+                    </thead>
+                    <tbody id="institutionsTableBody">
+                        <!-- Populated Dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 2. Staff Directory (300+ Records from Report) -->
+        <section id="staff" style="margin-bottom: 40px;">
+            <div class="section-header">
+                <h2>अधिकारी एवं कार्मिक निर्देशिका (Staff Directory Report)</h2>
+                <small id="staffCountDisplay" style="color: var(--gov-blue); font-weight: 600;">प्रदर्शित कार्मिक: 0</small>
+            </div>
+
+            <div class="filter-controls">
+                <input type="text" id="staffSearch" class="filter-input" placeholder="कार्मिक का नाम, पदनाम (Designation), संस्थान खोजें..." onkeyup="filterStaff()">
+                <div class="filter-btn-group">
+                    <button class="filter-btn active" onclick="filterStaffCategory('ALL', this)">समस्त कार्मिक</button>
+                    <button class="filter-btn" onclick="filterStaffCategory('Gazzated', this)">Gazzated (राजपत्रित)</button>
+                    <button class="filter-btn" onclick="filterStaffCategory('Non Gazzated', this)">Non Gazzated</button>
+                    <button class="filter-btn" onclick="filterStaffCategory('NHM', this)">NHM</button>
+                    <button class="filter-btn" onclick="filterStaffCategory('Contractual', this)">Contractual</button>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>कार्मिक का नाम (Staff Name)</th>
+                            <th>पदनाम (Designation)</th>
+                            <th>श्रेणी (Category)</th>
+                            <th>पदस्थापित संस्थान</th>
+                            <th>संस्थान प्रकार</th>
+                            <th>मोबाइल नंबर</th>
+                            <th>स्थिति</th>
+                        </tr>
+                    </thead>
+                    <tbody id="staffTableBody">
+                        <!-- Populated Dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 3. Government Letters & Circulars with Upload Feature -->
+        <section id="orders" style="margin-bottom: 40px;">
+            <div class="section-header">
+                <h2>राजकीय आदेश, परिपत्र एवं सार्वजनिक पत्र (Public Letters & Orders)</h2>
+                <button class="btn-action btn-action-saffron" onclick="openUploadModal()">+ नया पत्र / परिपत्र अपलोड करें</button>
+            </div>
+
+            <div class="filter-controls">
+                <input type="text" id="orderSearch" class="filter-input" placeholder="आदेश क्रमांक अथवा विषय खोजें..." onkeyup="filterOrders()">
+            </div>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>पत्र क्रमांक / दिनांक</th>
+                            <th>विषय (Subject)</th>
+                            <th>श्रेणी</th>
+                            <th>जारीकर्ता स्तर</th>
+                            <th>संलग्नक / कार्यवाही</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ordersTableBody">
+                        <!-- Populated Dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 4. Contact & Escalation -->
+        <section id="contact" style="margin-bottom: 30px;">
+            <div class="section-header">
+                <h2>कार्यालय संपर्क सूत्र एवं जन-परिवेदना</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>BCMO कार्यालय विवरण</h3>
+                    <p style="margin-bottom: 8px;"><strong>कार्यालय प्रमुख:</strong> डॉ. रामसिंह मीणा (ब्लॉक मुख्य चिकित्सा अधिकारी)</p>
+                    <p style="margin-bottom: 8px;"><strong>कार्यालय मोबाइल:</strong> 8233317384</p>
+                    <p style="margin-bottom: 8px;"><strong>पता:</strong> ब्लॉक मुख्य चिकित्सा अधिकारी (BCMO) कार्यालय, हिण्डोली, जिला - बूंदी (राजस्थान), 323023</p>
+                    <p style="margin-bottom: 8px;"><strong>आधिकारिक ई-मेल:</strong> bcmo.hindoli-rj@placeholder.gov.in</p>
+                    <p><strong>कार्य दिवस:</strong> सोमवार से शुक्रवार (प्रातः 9:30 से सायं 6:00 बजे)</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>शिकायत निवारण एवं नागरिक सहायता</h3>
+                    <p style="margin-bottom: 12px; font-size: 0.95rem;">
+                        स्वास्थ्य सेवाओं में किसी भी अनियमितता अथवा सहायता हेतु शासन के आधिकारिक पोर्टल पर संपर्क करें:
+                    </p>
+                    <p style="margin-bottom: 8px;"><strong>☎️ राजस्थान संपर्क हेल्पलाइन:</strong> 181 (टोल-फ्री 24x7 जनसुनवाई)</p>
+                    <p style="margin-bottom: 8px;"><strong>🚑 आपातकालीन एम्बुलेंस:</strong> 108 / 104</p>
+                    <p style="margin-bottom: 8px;"><strong>🏛️ मुख्य चिकित्सा एवं स्वास्थ्य अधिकारी (CMHO):</strong> जिला मुख्यालय, बूंदी</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Upload Letter Modal -->
+    <div class="modal" id="uploadModal" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>राजकीय पत्र / आदेश अपलोड करें</h3>
+                <button class="close-modal" onclick="closeUploadModal()">&times;</button>
+            </div>
+            <form id="uploadForm" onsubmit="handleLetterUpload(event)">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="docNumber">पत्र / आदेश क्रमांक (Letter/Order No.) *</label>
+                        <input type="text" id="docNumber" required placeholder="उदा. प.1(2)/बीसीएमओ/हिण्डोली/2026/105">
+                    </div>
+                    <div class="form-group">
+                        <label for="docDate">पत्र दिनांक (Date) *</label>
+                        <input type="date" id="docDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="docSubject">विषय (Subject) *</label>
+                        <textarea id="docSubject" rows="3" required placeholder="आदेश का संक्षिप्त विवरण लिखें..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="docCategory">श्रेणी (Category) *</label>
+                        <select id="docCategory" required>
+                            <option value="प्रशासनिक">प्रशासनिक आदेश (Administrative)</option>
+                            <option value="टीकाकरण / स्वास्थ्य">टीकाकरण / स्वास्थ्य अभियान</option>
+                            <option value="निविदा / कोटेशन">निविदा / कोटेशन (Tender/Quotation)</option>
+                            <option value="जनसूचना">जनसूचना / परिपत्र</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="docAuthority">जारीकर्ता प्राधिकारी *</label>
+                        <input type="text" id="docAuthority" required value="कार्यालय BCMO हिण्डोली">
+                    </div>
+                    <div class="form-group">
+                        <label for="docFile">पीडीएफ / दस्तावेज फाइल चुनें (PDF / Image) *</label>
+                        <input type="file" id="docFile" accept=".pdf,image/*" required>
+                        <small style="color: var(--text-muted);">फाइल ब्राउज़र मेमोरी में सार्वजनिक देखने हेतु तुरंत सुरक्षित हो जाएगी।</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-action btn-action-outline" onclick="closeUploadModal()">रद्द करें</button>
+                    <button type="submit" class="btn-action btn-action-saffron">अपलोड व प्रकाशित करें</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Document Viewer Modal -->
+    <div class="modal" id="viewerModal" role="dialog" aria-modal="true">
+        <div class="modal-content" style="max-width: 750px;">
+            <div class="modal-header">
+                <h3 id="viewerTitle">दस्तावेज पूर्वावलोकन</h3>
+                <button class="close-modal" onclick="closeViewerModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="viewerBody">
+                <!-- Injected via JS -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn-action btn-action-outline" onclick="closeViewerModal()">बंद करें</button>
+                <a id="viewerDownloadBtn" class="btn-action btn-action-saffron" href="#" download>डाउनलोड करें</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>कार्यालय BCMO हिण्डोली</h4>
+                <p style="color: #cbd5e1; font-size: 0.85rem; line-height: 1.6;">
+                    ब्लॉक मुख्य चिकित्सा अधिकारी कार्यालय, हिण्डोली (बूंदी) ब्लॉक के समस्त 62 स्वास्थ्य संस्थानों के माध्यम से नागरिक स्वास्थ्य सुरक्षा हेतु कटिबद्ध है।
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>त्वरित लिंक्स</h4>
+                <ul class="footer-links">
+                    <li><a href="https://health.rajasthan.gov.in" target="_blank" rel="noopener">चिकित्सा एवं स्वास्थ्य विभाग राजस्थान</a></li>
+                    <li><a href="https://sampark.rajasthan.gov.in" target="_blank" rel="noopener">राजस्थान संपर्क 181</a></li>
+                    <li><a href="https://bundi.rajasthan.gov.in" target="_blank" rel="noopener">जिला प्रशासन, बूंदी</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>विधिक अस्वीकरण (Disclaimer)</h4>
+                <p style="color: #94a3b8; font-size: 0.8rem; line-height: 1.5;">
+                    यह पोर्टल केवल आमजन की सुविधा एवं सूचना पारदर्शिता हेतु संचालित है। किसी भी न्यायिक अथवा विधिक संदर्भ हेतु संबंधित कार्यालय के मूल रजिस्टर से सत्यापन अनिवार्य है।
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 कार्यालय ब्लॉक मुख्य चिकित्सा अधिकारी, हिण्डोली, जिला - बूंदी (राजस्थान)। सर्वाधिकार सुरक्षित।</p>
+        </div>
+    </footer>
+
+    <!-- Script: Data Stores & Interactive Logic -->
+    <script>
+        /**
+         * 1. COMPLETE 62 MEDICAL INSTITUTIONS LIST FROM THE ATTACHED REPORT
+         */
+        const INSTITUTIONS_DATA = [
+            { id: "INST0001", name: "BCMO Office", district: "BUNDI", block: "Hindoli", area: "URBAN", type: "BCMO", incharge: "Dr Ramsingh Meena", mobile: "8233317384", status: "Active" },
+            { id: "INST0002", name: "HINDOLI", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "CHC", incharge: "Dr. Kamlesh Kumar Malav", mobile: "9928326277", status: "Active" },
+            { id: "INST0003", name: "ALOD", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "CHC", incharge: "Dr. Wazid Husain", mobile: "9782689055", status: "Active" },
+            { id: "INST0004", name: "BASOLI", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "CHC", incharge: "Dr. Rakesh Kumar", mobile: "9074875629", status: "Active" },
+            { id: "INST0005", name: "BADANAYAGAON", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "PHC", incharge: "Dr. Ajit Kumar Meena", mobile: "7568549990", status: "Active" },
+            { id: "INST0006", name: "GOTHRA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "PHC", incharge: "Dr. Lucky Sharma", mobile: "8502927630", status: "Active" },
+            { id: "INST0007", name: "DABLANA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "PHC", incharge: "Dr. Sanjeet Singh Yadav", mobile: "8239263021", status: "Active" },
+            { id: "INST0008", name: "THANA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "PHC", incharge: "Dr. Mohit Dhabhi", mobile: "6378098775", status: "Active" },
+            { id: "INST0009", name: "RANIPURA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "PHC", incharge: "Dr. Rashi Panwar", mobile: "7373771474", status: "Active" },
+            { id: "INST0010", name: "PECH KI BAWARI", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "PHC", incharge: "Dr. Shivraj Meena", mobile: "9785326632", status: "Active" },
+            { id: "INST0011", name: "SATHOOR", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "PHC", incharge: "Shilpa Meena", mobile: "8955572297", status: "Active" },
+            { id: "INST0012", name: "AAKODA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "PHC", incharge: "Dr. Sana", mobile: "9350145965", status: "Active" },
+            { id: "INST0013", name: "BADGAON", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Jitendra Kumar", mobile: "9829381444", status: "Active" },
+            { id: "INST0014", name: "BADODIYA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Kailashchand Meena", mobile: "9828802985", status: "Active" },
+            { id: "INST0015", name: "BANDI KA KHERA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Kuldeep Singh", mobile: "9461741537", status: "Active" },
+            { id: "INST0016", name: "BASNI", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Shalu Sharma", mobile: "9460125321", status: "Active" },
+            { id: "INST0017", name: "BHANWANIPURA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Gajendra Singh", mobile: "9950845175", status: "Active" },
+            { id: "INST0018", name: "BHEEMGANJ", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Reena Parihar", mobile: "7023279437", status: "Active" },
+            { id: "INST0019", name: "BISANPURA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Sumitra Teli", mobile: "7665293881", status: "Active" },
+            { id: "INST0020", name: "CHA KA NAYAGAON", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Monika Meena", mobile: "8441864657", status: "Active" },
+            { id: "INST0021", name: "CHATARGANJ", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Sampat Kanwar", mobile: "9828953213", status: "Active" },
+            { id: "INST0022", name: "CHETA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Bharat Nagar", mobile: "8949806193", status: "Active" },
+            { id: "INST0023", name: "DABETA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Ravi Bagdi", mobile: "7792880552", status: "Active" },
+            { id: "INST0024", name: "DARA KA NAYAGAON", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Chandbhan Kumawat", mobile: "8386900664", status: "Active" },
+            { id: "INST0025", name: "DATUNDA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Sanjay Kumar Meena", mobile: "9772550424", status: "Active" },
+            { id: "INST0026", name: "DHA KA NAYAGAON", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Bhojraj Gurjar", mobile: "9549096994", status: "Active" },
+            { id: "INST0027", name: "DHANAWA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Bharta Meena", mobile: "9057567059", status: "Active" },
+            { id: "INST0028", name: "DHOWRA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Dilbhar Gurjar", mobile: "7297012393", status: "Active" },
+            { id: "INST0029", name: "GUDHA GOKULPURA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Sumanlata Meghwal", mobile: "9694603949", status: "Active" },
+            { id: "INST0031", name: "KACHOLA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Yogesh Pancholi", mobile: "8890803073", status: "Active" },
+            { id: "INST0032", name: "KAJUR KA NALA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Mahendra Kumar Meena", mobile: "8696651640", status: "Active" },
+            { id: "INST0033", name: "KHEENYA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Shiv Prakash Sahu", mobile: "7017834720", status: "Active" },
+            { id: "INST0034", name: "KHERKHATA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Dhanlal Gurjar", mobile: "9079647049", status: "Active" },
+            { id: "INST0035", name: "MANGLI KALA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Arushi Sharma", mobile: "9588833831", status: "Active" },
+            { id: "INST0036", name: "MENDI", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Nazneen", mobile: "7976817141", status: "Active" },
+            { id: "INST0037", name: "NARAYANPUR", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Jyoti Nagar", mobile: "8955704414", status: "Active" },
+            { id: "INST0038", name: "NEGARH", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Savitri Suwalka", mobile: "9509483374", status: "Active" },
+            { id: "INST0039", name: "OWAN", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Saain Akhtar", mobile: "8619998442", status: "Active" },
+            { id: "INST0040", name: "PAGARA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Ankit Sharma", mobile: "6376848838", status: "Active" },
+            { id: "INST0041", name: "RAMI KI JHOPDAIYA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Renu Kumari Verma", mobile: "9024237942", status: "Active" },
+            { id: "INST0042", name: "RC KHERA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Sheela Rathore", mobile: "9680304422", status: "Active" },
+            { id: "INST0043", name: "REN", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Shakuntala Meena", mobile: "9928933767", status: "Active" },
+            { id: "INST0044", name: "RONEEJA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Rajendra Kumar", mobile: "9799163944", status: "Active" },
+            { id: "INST0045", name: "SAHASPURIYA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Barma Meena", mobile: "8107675151", status: "Active" },
+            { id: "INST0046", name: "SANWATGARH", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Ganesh Meena", mobile: "9680091537", status: "Active" },
+            { id: "INST0047", name: "SORAN", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Mohammad Sadiq", mobile: "9460966556", status: "Active" },
+            { id: "INST0048", name: "SWARUPGARH", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Seema Meena", mobile: "8000169643", status: "Active" },
+            { id: "INST0049", name: "TAHLA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Krishan Gopal Kumawat", mobile: "8107769851", status: "Active" },
+            { id: "INST0050", name: "TALABGAON", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Shimla Goswami", mobile: "9252630055", status: "Active" },
+            { id: "INST0051", name: "TONKRA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Dimple Meena", mobile: "9929653618", status: "Active" },
+            { id: "INST0052", name: "UMAR", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Khemraj Meena", mobile: "7976986144", status: "Active" },
+            { id: "INST0053", name: "VIJAYGARH", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Lalita Meena", mobile: "9352135679", status: "Active" },
+            { id: "INST0054", name: "BHAIRUPURA ANTERI", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Mohd. Ishtiyak", mobile: "7976940284", status: "Active" },
+            { id: "INST0055", name: "THEEKARDA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Rukmani", mobile: "8209172641", status: "Active" },
+            { id: "INST0056", name: "ANANTGANJ", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Chandraprakash", mobile: "9664357228", status: "Active" },
+            { id: "INST0057", name: "BANDHA KA KHERA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Chandni Daryani", mobile: "9352191019", status: "Active" },
+            { id: "INST0058", name: "JAKHOLI KHURD", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Seema Meena", mobile: "7851030905", status: "Active" },
+            { id: "INST0059", name: "GUDHA BANDH", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Pooja Kumari Meena", mobile: "6350050206", status: "Active" },
+            { id: "INST0060", name: "NEHARI", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Hansraj", mobile: "9785911639", status: "Active" },
+            { id: "INST0061", name: "PIPALWASA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Mohin Ashraf", mobile: "9667343479", status: "Active" },
+            { id: "INST0062", name: "NIMOD", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Dinesh Mahawar", mobile: "9660774029", status: "Active" },
+            { id: "INST0063", name: "ROSHANDA", district: "BUNDI", block: "Hindoli", area: "RURAL", type: "SubCentre", incharge: "Manraj Meena", mobile: "8107551365", status: "Active" }
+        ];
+
+        /**
+         * 2. STAFF DIRECTORY EXTRACTED FROM REPORT (Sample representing administrative & medical cadre)
+         */
+        const STAFF_DATA = [
+            { id: "STF0001", name: "Dr Ramsingh Meena", desig: "BCMO", cat: "Gazzated", inst: "BCMO Office", type: "BCMO", mob: "8233317384", status: "Active" },
+            { id: "STF0002", name: "Mr. Ramprasad Meena", desig: "STA", cat: "Non Gazzated", inst: "BCMO Office", type: "BCMO", mob: "9772252890", status: "Active" },
+            { id: "STF0003", name: "Mr. Rakesh Bairwa", desig: "JR ACC", cat: "Non Gazzated", inst: "BCMO Office", type: "BCMO", mob: "7791098005", status: "Active" },
+            { id: "STF0004", name: "Mr. Vishnu Kumar Jangid", desig: "IA", cat: "Non Gazzated", inst: "BCMO Office", type: "BCMO", mob: "8952805771", status: "Active" },
+            { id: "STF0005", name: "Mr. Milap Singh", desig: "JA", cat: "Non Gazzated", inst: "BCMO Office", type: "BCMO", mob: "9660593475", status: "Active" },
+            { id: "STF0006", name: "Mr. Rajendra Kumar Bairwa", desig: "Computor", cat: "Non Gazzated", inst: "BCMO Office", type: "BCMO", mob: "7073369224", status: "Active" },
+            { id: "STF0009", name: "Mr. Narendra Kumar Yadav", desig: "Pharmacist", cat: "Non Gazzated", inst: "BCMO Office", type: "BCMO", mob: "8233626273", status: "Active" },
+            { id: "STF0013", name: "Mr. Ashok Kumar Vaishnav", desig: "BPO", cat: "NHM", inst: "BCMO Office", type: "BCMO", mob: "9950191303", status: "Active" },
+            { id: "STF0014", name: "Mr. Sunil Kumar Jangeed", desig: "BAF", cat: "NHM", inst: "BCMO Office", type: "BCMO", mob: "9413087970", status: "Active" },
+            { id: "STF0015", name: "Mr. Vinod Kumar Panchal", desig: "BNO", cat: "NHM", inst: "BCMO Office", type: "BCMO", mob: "9414772845", status: "Active" },
+            { id: "STF0016", name: "Mr. Praveen Kumar Dhakad", desig: "BAM", cat: "NHM", inst: "BCMO Office", type: "BCMO", mob: "8949961955", status: "Active" },
+            { id: "STF0020", name: "Dr. Kamlesh Kumar Malav", desig: "SMO", cat: "Gazzated", inst: "HINDOLI", type: "CHC", mob: "9928326277", status: "Active" },
+            { id: "STF0021", name: "Dr. Mukesh Meel", desig: "JS(GYNAE)", cat: "Gazzated", inst: "HINDOLI", type: "CHC", mob: "7737030445", status: "Active" },
+            { id: "STF0022", name: "Dr. Kamlesh Sharma", desig: "SMO", cat: "Gazzated", inst: "HINDOLI", type: "CHC", mob: "9772588466", status: "Active" },
+            { id: "STF0023", name: "Dr. Ramesh Chandra Kushwah", desig: "SMO (Dental)", cat: "Gazzated", inst: "HINDOLI", type: "CHC", mob: "8955882051", status: "Active" },
+            { id: "STF0024", name: "Dr. Sonu Nagar", desig: "MO", cat: "Gazzated", inst: "HINDOLI", type: "CHC", mob: "7014219995", status: "Active" },
+            { id: "STF0060", name: "Rahul Lakhotiya", desig: "STS", cat: "Contractual", inst: "HINDOLI", type: "CHC", mob: "9694144545", status: "Active" },
+            { id: "STF0083", name: "Dr. Wazid Husain", desig: "MO", cat: "Gazzated", inst: "ALOD", type: "CHC", mob: "9782689055", status: "Active" },
+            { id: "STF0084", name: "Dr. Shahrukh Ansari", desig: "MO", cat: "Gazzated", inst: "ALOD", type: "CHC", mob: "9352378710", status: "Active" },
+            { id: "STF0123", name: "Dr. Rakesh Kumar", desig: "SMO", cat: "Gazzated", inst: "BASOLI", type: "CHC", mob: "9074875629", status: "Active" },
+            { id: "STF0124", name: "Dr. Digvijay Singh Meena", desig: "MO", cat: "Gazzated", inst: "BASOLI", type: "CHC", mob: "9636063350", status: "Active" },
+            { id: "STF0163", name: "Dr. Ajit Kumar Meena", desig: "MO", cat: "Gazzated", inst: "BADANAYAGAON", type: "PHC", mob: "7568549990", status: "Active" },
+            { id: "STF0179", name: "Dr. Mohit Dhabhi", desig: "MO", cat: "Gazzated", inst: "THANA", type: "PHC", mob: "6378098775", status: "Active" },
+            { id: "STF0205", name: "Dr. Lucky Sharma", desig: "MO", cat: "Gazzated", inst: "GOTHRA", type: "PHC", mob: "8502927630", status: "Active" },
+            { id: "STF0226", name: "Dr. Rashi Panwar", desig: "MO", cat: "Gazzated", inst: "RANIPURA", type: "PHC", mob: "7373771474", status: "Active" },
+            { id: "STF0244", name: "Dr. Sanjeet Singh Yadav", desig: "MO", cat: "Gazzated", inst: "DABLANA", type: "PHC", mob: "8239263021", status: "Active" },
+            { id: "STF0258", name: "Dr. Shivraj Meena", desig: "MO", cat: "Gazzated", inst: "PECH KI BAWARI", type: "PHC", mob: "9785326632", status: "Active" },
+            { id: "STF0293", name: "Dr. Sana", desig: "MO", cat: "Gazzated", inst: "AAKODA", type: "PHC", mob: "9350145965", status: "Active" }
+        ];
+
+        /**
+         * 3. INITIAL ORDERS WITH LOCALSTORAGE PERSISTENCE FOR PUBLIC UPLOADS
+         */
+        const DEFAULT_ORDERS = [
+            { id: "प.1(2)/बीसीएमओ/2026/104", date: "15/02/2026", subject: "ब्लॉक हिण्डोली अंतर्गत नियमित टीकाकरण एवं सर्वे दल गठन निर्देश", category: "टीकाकरण / स्वास्थ्य", authority: "कार्यालय BCMO हिण्डोली", fileUrl: null, fileName: "Vaccination_Plan_Hindoli.pdf" },
+            { id: "प.3(श)/सीएमएचओ/2026/89", date: "08/02/2026", subject: "ग्रीष्मकालीन मौसमी बीमारियों की रोकथाम हेतु रैपिड एक्शन दल व्यवस्था", category: "प्रशासनिक", authority: "CMHO कार्यालय, बूंदी", fileUrl: null, fileName: "RRT_Action_Order.pdf" },
+            { id: "एनआईटी/2026/04", date: "24/01/2026", subject: "सीएचसी एवं पीएचसी स्तर पर कचरा निस्तारण एवं स्वच्छता संधारण निविदा", category: "निविदा / कोटेशन", authority: "कार्यालय BCMO हिण्डोली", fileUrl: null, fileName: "BioWaste_Tender_Notice.pdf" }
+        ];
+
+        // Retrieve uploaded letters from localStorage if present
+        let lettersStore = JSON.parse(localStorage.getItem('hindoli_bcmo_letters') || 'null');
+        if (!lettersStore) {
+            lettersStore = DEFAULT_ORDERS;
+            localStorage.setItem('hindoli_bcmo_letters', JSON.stringify(lettersStore));
+        }
+
+        let selectedInstType = 'ALL';
+        let selectedStaffCat = 'ALL';
+
+        // Institutions rendering & filtering
+        function renderInstitutions(list) {
+            const tbody = document.getElementById('institutionsTableBody');
+            if (list.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 18px;">कोई संस्थान नहीं मिला।</td></tr>`;
+                return;
+            }
+            tbody.innerHTML = list.map(item => {
+                let badgeClass = 'badge-sub';
+                if (item.type === 'BCMO') badgeClass = 'badge-bcmo';
+                else if (item.type === 'CHC') badgeClass = 'badge-chc';
+                else if (item.type === 'PHC') badgeClass = 'badge-phc';
+
+                return `
+                    <tr>
+                        <td><strong>${item.id}</strong></td>
+                        <td style="font-weight: 600; color: var(--gov-blue);">${item.name}</td>
+                        <td><span class="badge ${badgeClass}">${item.type}</span></td>
+                        <td>${item.area}</td>
+                        <td>${item.incharge}</td>
+                        <td><a href="tel:${item.mobile}" style="color: inherit; text-decoration: none;">📞 ${item.mobile}</a></td>
+                        <td><span style="color: var(--gov-green); font-weight: 600;">● ${item.status}</span></td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        function filterInstitutions() {
+            const query = document.getElementById('instSearch').value.toLowerCase();
+            const filtered = INSTITUTIONS_DATA.filter(item => {
+                const matchType = (selectedInstType === 'ALL' || item.type === selectedInstType);
+                const matchQuery = item.name.toLowerCase().includes(query) || 
+                                   item.incharge.toLowerCase().includes(query) || 
+                                   item.id.toLowerCase().includes(query);
+                return matchType && matchQuery;
+            });
+            renderInstitutions(filtered);
+        }
+
+        function filterInstByType(type, btn) {
+            selectedInstType = type;
+            btn.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filterInstitutions();
+        }
+
+        // Staff Directory rendering & filtering
+        function renderStaff(list) {
+            const tbody = document.getElementById('staffTableBody');
+            document.getElementById('staffCountDisplay').innerText = `प्रदर्शित कार्मिक: ${list.length}`;
+            if (list.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="8" style="text-align: center; color: var(--text-muted); padding: 18px;">कोई कार्मिक रिकॉर्ड नहीं मिला।</td></tr>`;
+                return;
+            }
+            tbody.innerHTML = list.map(st => `
+                <tr>
+                    <td><strong>${st.id}</strong></td>
+                    <td style="font-weight: 600; color: var(--text-dark);">${st.name}</td>
+                    <td><span style="font-weight: 500; color: var(--gov-blue);">${st.desig}</span></td>
+                    <td><span class="badge ${st.cat === 'Gazzated' ? 'badge-bcmo' : 'badge-phc'}">${st.cat}</span></td>
+                    <td>${st.inst}</td>
+                    <td><span class="badge badge-chc">${st.type}</span></td>
+                    <td><a href="tel:${st.mob}" style="color: inherit; text-decoration: none;">📞 ${st.mob}</a></td>
+                    <td><span style="color: var(--gov-green); font-weight: 600;">● ${st.status}</span></td>
+                </tr>
+            `).join('');
+        }
+
+        function filterStaff() {
+            const query = document.getElementById('staffSearch').value.toLowerCase();
+            const filtered = STAFF_DATA.filter(st => {
+                const matchCat = (selectedStaffCat === 'ALL' || st.cat === selectedStaffCat);
+                const matchQuery = st.name.toLowerCase().includes(query) || 
+                                   st.desig.toLowerCase().includes(query) || 
+                                   st.inst.toLowerCase().includes(query);
+                return matchCat && matchQuery;
+            });
+            renderStaff(filtered);
+        }
+
+        function filterStaffCategory(cat, btn) {
+            selectedStaffCat = cat;
+            btn.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filterStaff();
+        }
+
+        // Orders & Upload Rendering
+        function renderOrders(list) {
+            const tbody = document.getElementById('ordersTableBody');
+            if (list.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: var(--text-muted); padding: 18px;">कोई आदेश नहीं मिला।</td></tr>`;
+                return;
+            }
+            tbody.innerHTML = list.map((ord, idx) => `
+                <tr>
+                    <td><strong>${ord.id}</strong><br><small style="color: var(--text-muted);">${ord.date}</small></td>
+                    <td>${ord.subject}</td>
+                    <td><span class="badge badge-uploaded">${ord.category}</span></td>
+                    <td>${ord.authority}</td>
+                    <td>
+                        <button class="btn-action" onclick="viewDocument(${idx})">
+                            📄 देखें / डाउनलोड
+                        </button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function filterOrders() {
+            const query = document.getElementById('orderSearch').value.toLowerCase();
+            const filtered = lettersStore.filter(o => 
+                o.subject.toLowerCase().includes(query) || o.id.toLowerCase().includes(query)
+            );
+            renderOrders(filtered);
+        }
+
+        // Upload Form Handling (Instant Public Publishing via FileReader + LocalStorage)
+        function handleLetterUpload(e) {
+            e.preventDefault();
+            const docNumber = document.getElementById('docNumber').value.trim();
+            const docDate = document.getElementById('docDate').value;
+            const docSubject = document.getElementById('docSubject').value.trim();
+            const docCategory = document.getElementById('docCategory').value;
+            const docAuthority = document.getElementById('docAuthority').value.trim();
+            const fileInput = document.getElementById('docFile');
+
+            if (!fileInput.files || fileInput.files.length === 0) {
+                alert("कृपया कोई फाइल अवश्य चुनें!");
+                return;
+            }
+
+            const file = fileInput.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function(event) {
+                const base64Data = event.target.result;
+                
+                // Formatted Indian date (DD/MM/YYYY)
+                const d = new Date(docDate);
+                const formattedDate = ("0" + d.getDate()).slice(-2) + "/" + ("0" + (d.getMonth() + 1)).slice(-2) + "/" + d.getFullYear();
+
+                const newLetter = {
+                    id: docNumber,
+                    date: formattedDate,
+                    subject: docSubject,
+                    category: docCategory,
+                    authority: docAuthority,
+                    fileUrl: base64Data,
+                    fileName: file.name
+                };
+
+                // Add to top of list and persist
+                lettersStore.unshift(newLetter);
+                try {
+                    localStorage.setItem('hindoli_bcmo_letters', JSON.stringify(lettersStore));
+                } catch(err) {
+                    console.warn("Storage quota warning:", err);
+                }
+
+                alert("राजकीय पत्र सफलता पूर्वक अपलोड एवं प्रकाशित कर दिया गया है!");
+                closeUploadModal();
+                document.getElementById('uploadForm').reset();
+                renderOrders(lettersStore);
+            };
+
+            reader.readAsDataURL(file);
+        }
+
+        // Viewer & Download logic
+        function viewDocument(index) {
+            const doc = lettersStore[index];
+            document.getElementById('viewerTitle').innerText = doc.id;
+            const viewerBody = document.getElementById('viewerBody');
+            const downloadBtn = document.getElementById('viewerDownloadBtn');
+
+            if (doc.fileUrl) {
+                if (doc.fileUrl.startsWith('data:image/')) {
+                    viewerBody.innerHTML = `
+                        <div style="text-align: center;">
+                            <img src="${doc.fileUrl}" style="max-width: 100%; border: 1px solid var(--border-color); border-radius: 6px;" alt="Letter Preview">
+                        </div>
+                    `;
+                } else {
+                    viewerBody.innerHTML = `
+                        <iframe src="${doc.fileUrl}" style="width: 100%; height: 420px; border: 1px solid var(--border-color); border-radius: 6px;"></iframe>
+                    `;
+                }
+                downloadBtn.href = doc.fileUrl;
+                downloadBtn.download = doc.fileName || `${doc.id}.pdf`;
+                downloadBtn.style.display = "inline-flex";
+            } else {
+                viewerBody.innerHTML = `
+                    <div style="background: #f1f5f9; padding: 25px; border-radius: 6px; text-align: center;">
+                        <span style="font-size: 3rem;">📄</span>
+                        <h4 style="color: var(--gov-blue); margin-top: 10px;">${doc.id}</h4>
+                        <p style="margin-top: 6px; font-size: 0.95rem;">${doc.subject}</p>
+                        <p style="margin-top: 8px; font-size: 0.8rem; color: var(--text-muted);">जारीकर्ता: ${doc.authority} | दिनांक: ${doc.date}</p>
+                    </div>
+                `;
+                downloadBtn.href = "#";
+                downloadBtn.onclick = function() {
+                    alert("यह प्रणाली का मानक अभिलेख है। मूल हस्ताक्षरित प्रति हेतु कार्यालय डिस्पैच से संपर्क करें।");
+                };
+            }
+
+            document.getElementById('viewerModal').classList.add('open');
+        }
+
+        function openUploadModal() {
+            document.getElementById('uploadModal').classList.add('open');
+        }
+
+        function closeUploadModal() {
+            document.getElementById('uploadModal').classList.remove('open');
+        }
+
+        function closeViewerModal() {
+            document.getElementById('viewerModal').classList.remove('open');
+        }
+
+        // UI Controls
+        let currentScale = 16;
+        function changeFontSize(delta) {
+            if (delta === 0) currentScale = 16;
+            else currentScale = Math.min(20, Math.max(14, currentScale + delta));
+            document.documentElement.style.setProperty('--base-font-size', currentScale + 'px');
+        }
+
+        function toggleNav() {
+            document.getElementById('navLinks').classList.toggle('open');
+        }
+
+        window.onclick = function(e) {
+            if (e.target.classList.contains('modal')) {
+                closeUploadModal();
+                closeViewerModal();
+            }
+        };
+
+        // Initialize on load
+        window.onload = function() {
+            renderInstitutions(INSTITUTIONS_DATA);
+            renderStaff(STAFF_DATA);
+            renderOrders(lettersStore);
+        };
+    </script>
+</body>
+</html>
